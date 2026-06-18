@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ku" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>بلیمەت</title>
+
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: #FFF8F0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .logo {
+    width: 96px;
+    height: 96px;
+    object-fit: cover;
+    border-radius: 26px;
+    margin-bottom: 18px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  }
+
+  h1 {
+    font-size: 52px;
+    font-weight: 800;
+    color: #2C2C2A;
+    letter-spacing: -1px;
+    margin-bottom: 12px;
+    direction: rtl;
+  }
+
+  .tagline {
+    font-size: 18px;
+    color: #5F5E5A;
+    margin-bottom: 48px;
+    line-height: 1.7;
+    max-width: 340px;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 18px 28px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 700;
+    transition: transform 0.15s ease, opacity 0.15s ease;
+    cursor: pointer;
+  }
+
+  .btn:active {
+    transform: scale(0.97);
+    opacity: 0.9;
+  }
+
+  .btn-ios {
+    background: #1C1C1E;
+    color: #FFFFFF;
+  }
+
+  .btn-android {
+    background: #01875F;
+    color: #FFFFFF;
+  }
+
+  .btn svg {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+  }
+
+  .btn-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .btn-sub {
+    font-size: 12px;
+    font-weight: 400;
+    opacity: 0.78;
+    margin-bottom: 2px;
+  }
+
+  .btn-main {
+    font-size: 17px;
+    font-weight: 800;
+  }
+
+  .footer {
+    margin-top: 48px;
+    font-size: 13px;
+    color: #B4B2A9;
+  }
+</style>
+</head>
+
+<body>
+
+<img src="/logo.png" alt="بلیمەت" class="logo">
+
+<h1>بلیمەت</h1>
+
+<p class="tagline">یارییەکی فێرکاری و خۆش بۆ منداڵان — ئێستا دایبگرە!</p>
+
+<div class="buttons">
+
+  <a href="https://apps.apple.com/us/app/%D8%A8%D9%84%DB%8C%D9%85%DB%95%D8%AA/id6758273850" class="btn btn-ios">
+    <svg viewBox="0 0 24 24" fill="currentColor">
+      <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+    </svg>
+
+    <div class="btn-text">
+      <span class="btn-sub">دایبگرە لە</span>
+      <span class="btn-main">ئاپ ستۆر</span>
+    </div>
+  </a>
+
+  <a href="https://play.google.com/store/apps/details?id=com.helanaymndalan.blimat" class="btn btn-android">
+    <svg viewBox="0 0 24 24" fill="currentColor">
+      <path d="M3.18 23.76c.3.17.64.22.99.14l12.12-6.98-2.54-2.54-10.57 9.38zM.5 1.48C.19 1.8 0 2.3 0 2.96v18.08c0 .66.19 1.16.51 1.48l.08.07 10.12-10.12v-.24L.58 1.41.5 1.48zM20.37 10.43l-2.9-1.68-2.85 2.85 2.85 2.85 2.91-1.68c.83-.48.83-1.26-.01-1.74zM3.18.24l12.12 6.98-2.54 2.54L2.19.38C2.54.3 2.88.35 3.18.24z"/>
+    </svg>
+
+    <div class="btn-text">
+      <span class="btn-sub">دایبگرە لە</span>
+      <span class="btn-main">گووگڵ پلەی</span>
+    </div>
+  </a>
+
+</div>
+
+<p class="footer">بەردەستە بۆ ئایفۆن و ئەندرۆید</p>
+
+</body>
+</html>
